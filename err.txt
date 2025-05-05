@@ -1,0 +1,1 @@
+ls: cannot access 'notafile': No such file or directory

@@ -1,0 +1,2 @@
+crontab -e
+30 23 * * * /bin/sh /patrick/shell_scripting/sleep_time_reminder.sh

@@ -1,0 +1,10 @@
+arguments_to_scripts.sh
+conditionals.sh
+exit_codes_and_error_handling.sh
+functions.sh
+input_and_output.sh
+loops.sh
+output.txt
+README.md
+redirection.sh
+variables.sh
