@@ -29,9 +29,9 @@ name="Patrick"
 echo "Hello, $name"
 ```
 
-No space around =
+No space around `=`
 
-Use "$var" to avoid word splitting
+Use `"$var"` to avoid word splitting
 
 ## 1.2 Input and Output
 
@@ -53,15 +53,15 @@ fi
 
 Common test operators:
 
--f file.txt → file exists
+- `-f file.txt` → file exists
 
--d dir/ → directory exists
+- `-d dir/` → directory exists
 
--z "$var" → string is empty
+- `-z "$var"` → string is empty
 
-"$a" = "$b" → string equality
+- `"$a" = "$b"` → string equality
 
--eq, -lt, -gt → numbers
+- `-eq`, `-lt`, `-gt` → numbers
 
 ## 1.4 Loops
 
@@ -98,7 +98,7 @@ echo "All args: $@"
 echo "Number of args: $#"
 ```
 
-    Run with: ./myscript.sh arg1 arg2
+Run with: `./myscript.sh arg1 arg2`
 
 ## 2.2 Exit Codes and Error Handling
 
@@ -159,22 +159,22 @@ cp -r "$src" "$dest/backup-$date"
 echo "Backup complete: $dest/backup-$date"
 ```\
 
-Make it executable: chmod +x backup.sh, run it, then add to cron.
+Make it executable: `chmod +x backup.sh`, run it, then add to cron.
 
 # 🧹 BEST PRACTICES (5 MIN)
 
-    Always use quotes around variables: "$var"
+- Always use quotes around variables: `"$var"`
 
-    Use set -euo pipefail at the top for safety:
+- Use `set -euo pipefail` at the top for safety:
 
-    ```
-    set -euo pipefail
-    IFS=$'\n\t'
-    ```
+```
+set -euo pipefail
+IFS=$'\n\t'
+```
 
-    Test scripts in a safe environment before running on production
+-Test scripts in a safe environment before running on production
 
-    Use logging: logger, echo, or tee
+- Use logging: `logger`, `echo`, or `tee`
 
 # ✅ CHECKLIST: WHAT YOU NOW KNOW
 
@@ -190,10 +190,10 @@ Make it executable: chmod +x backup.sh, run it, then add to cron.
 
 # 📚 RECOMMENDED NEXT STEPS
 
-    Read man bash
+- Read `man bash`
 
-    Use [ShellCheck](https://www.shellcheck.net/) to lint your scripts
+- Use [ShellCheck](https://www.shellcheck.net/) to lint your scripts
 
-    Write daily-use scripts (e.g. update system, monitor disk usage)
+- Write daily-use scripts (e.g. update system, monitor disk usage)
 
-    Learn about getopts for parsing flags
+- Learn about `getopts` for parsing flags
