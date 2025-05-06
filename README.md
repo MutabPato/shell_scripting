@@ -18,7 +18,7 @@ Basic skeleton:
 echo "Hello, world!" 
 ```
 
-    Save as hello.sh, make it executable: chmod +x hello.sh, then run: ./hello.sh
+Save as `hello.sh`, make it executable: `chmod +x hello.sh`, then run: `./hello.sh`
 
 # 🧰 PART 1: CORE CONCEPTS (20 MIN)
 
@@ -29,9 +29,9 @@ name="Patrick"
 echo "Hello, $name"
 ```
 
-    No space around =
+No space around =
 
-    Use "$var" to avoid word splitting
+Use "$var" to avoid word splitting
 
 ## 1.2 Input and Output
 
@@ -53,15 +53,15 @@ fi
 
 Common test operators:
 
-    -f file.txt → file exists
+-f file.txt → file exists
 
-    -d dir/ → directory exists
+-d dir/ → directory exists
 
-    -z "$var" → string is empty
+-z "$var" → string is empty
 
-    "$a" = "$b" → string equality
+"$a" = "$b" → string equality
 
-    -eq, -lt, -gt → numbers
+-eq, -lt, -gt → numbers
 
 ## 1.4 Loops
 
@@ -171,7 +171,7 @@ Make it executable: chmod +x backup.sh, run it, then add to cron.
     set -euo pipefail
     IFS=$'\n\t'
     ```
-    
+
     Test scripts in a safe environment before running on production
 
     Use logging: logger, echo, or tee
